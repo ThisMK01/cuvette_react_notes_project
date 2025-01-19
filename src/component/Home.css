@@ -110,6 +110,7 @@
   border: none;
    z-index: 1001;
   top: 80vh;
+  right: 82.5vw;
 }
 
 #addnotes:hover {
@@ -196,7 +197,7 @@
 #addnotes {
   position: fixed; /* Always fixed on the screen */
   bottom: 20px; /* Position the button near the bottom */
-  
+  right: 20px;
   height: 70px; /* Button height */
   width: 70px; /* Button width */
   border-radius: 50%; /* Circular shape */
