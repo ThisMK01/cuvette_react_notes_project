@@ -70,15 +70,16 @@ function Home() {
   };
 
   const sidebarClass = isMobile && selectedGroupIndex !== null ? 'sidebar hidden' : 'sidebar';
-  //
+ 
 
   return (
     <>
     <div id="image" className={creat?"fade":""}   >
       <div className={`app-container ${!selectedGroupIndex ? 'no-group-selected' : ''}`}>
         <div className={sidebarClass}>
-          <Homeinfo groups={gpinfo} onGroupSelect={handleGroupSelect} />
+          <Homeinfo groups={gpinfo} onGroupSelect={handleGroupSelect} />  
         </div>
+        
 
         <div className="main-content">
           {isMobile && selectedGroupIndex !== null && (
@@ -122,6 +123,12 @@ function Home() {
             </div>
             
           )}
+          <button 
+        id="addnotes" 
+        onClick={handleButtonClick}
+      >
+        +
+      </button>
               </div>
           {selectedGroupIndex !== null && (
             <Notecitor
@@ -130,23 +137,19 @@ function Home() {
               setGpinfo={setGpinfo}
             />
           )}
+        
         </div>
+        
+     
       </div>
 
-      <button 
-        id="addnotes" 
-        className={selectedGroupIndex === null ? 'visible' : ''}
-        onClick={handleButtonClick}
-      >
-        +
-      </button>
       
       {creat && (
         <div ref={creatref}>
           <Creat oninitchg={handleinitials} />
         </div>
       )}
-     
+      
     </>
   );
 }

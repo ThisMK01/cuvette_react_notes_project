@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Notecitor.css';
 import { FaPaperPlane } from "react-icons/fa";
-
+import "./Creat.css"
 function Notecitor({ index, groups, setGpinfo }) {
   const [note, setNote] = useState('');
   const [notes, setNotes] = useState([]);
