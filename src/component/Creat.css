@@ -1,0 +1,134 @@
+#create{
+position: absolute;
+
+align-Items:center;
+height:35vh;
+width:30vw;
+top:30vh;
+left:45vw;
+border-radius: 2px;
+background-color: rgb(255, 255, 255);
+z-index: 10000;
+
+}
+.label-style {
+  position: relative;
+  
+  left: 30px;
+  font-size: 23px;
+  font-weight: 700;
+  top: 20px;
+}
+
+#lablename
+{
+    
+  position: relative;
+  display: flex;
+  left: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  top: 30px;
+
+}
+#gname
+{
+    width: 50%;
+  left: 20px;
+  position: relative;
+  height: 25px;
+  border-radius: 10px;
+  padding-left: 10px;
+  border: 1px solid black;
+  font-size: 15px;
+}
+#create #name button {
+    position: relative;
+   top: 10%;
+  border: none;
+  border-radius: 50%;
+  width: 6%;
+  height: 4vh;
+  left: 20px;
+  cursor: pointer;
+}
+
+#create #name button:nth-child(1) {
+  background: #b48cfa;
+}
+
+
+
+#create #name button:nth-child(2) {
+  background: #ff78f1;
+}
+
+#create #name button:nth-child(3) {
+  background: #44e7fc;
+}
+
+#create #name button:nth-child(4) {
+  background: #f29677;
+}
+
+#create #name button:nth-child(5) {
+  background: #0048ff;
+}
+
+#create #name button:nth-child(6) {
+  background: #6691ff;
+}
+
+#name {
+  position: relative;
+  display: flex;
+  left: 30px;
+  font-size: 20px;
+  gap: 10px;
+  font-weight: 700;
+  top: 60px;
+}
+
+#creatbtn
+{
+    background: #0010f1;
+    height: 15%;
+    width: 25%;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid black;
+  position: relative;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  left: 70%;
+  top:35%;
+  cursor: pointer;
+
+}
+#creatbtn:hover
+{
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+     transition: all 0.3s ease;
+}
+  
+  #creatbtn:active
+  {
+    transform: scale(0.98);
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+      transition: all 0.3s ease;
+}
+
+@media (max-width: 1200px)
+{
+#create{
+
+height:20vh;
+width:20vw;
+}
+#name
+{
+    font-size: 10px;
+}
+
+}
